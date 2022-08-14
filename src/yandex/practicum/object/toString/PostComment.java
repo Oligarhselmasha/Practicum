@@ -1,6 +1,6 @@
 package yandex.practicum.object.toString;
 
-public class PostComment extends Post{
+public class PostComment {
     private String text; // содержание комментария
     private String[] whoLiked; // кто поддержал
 

@@ -25,8 +25,12 @@ public class Post {
     }
 
     public String toString (){
-        return "Post{" + "title='" + title + '\'' + " content.length='" + content.length() + '\'' + " tags= " + Arrays.toString(tags)
-                + '\'' + " comments= " + "PostComment{text='" + comments
+        String result = "Post{" + "title='" + title + '\'' + ", content.length='";
+        if (content!=null){
+          result+=content.length() + '\'' + " tags= " + Arrays.toString(tags) + '\'' + " comments= " +  comments;
+        }
+        else result+= '\'' + " tags= " + Arrays.toString(tags) + '\'' + " comments= " + ;
+           return result;
     }
 
     /* Вывод должен получиться таким:
